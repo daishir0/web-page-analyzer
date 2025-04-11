@@ -112,6 +112,9 @@ class ImageAnalyzer:
                     json_data = json_data[:-3]  # "```" を除去
                 json_data = json_data.strip()
 
+                # 文字列連結表現を修正（"@" + "username" → "@username"）
+                json_data = json_data.replace('"@" + "', '"@')
+
                 # JSONとして解析してフォーマットを整える
                 parsed_json = json.loads(json_data)
                 formatted_json = json.dumps(parsed_json, ensure_ascii=False, indent=2)
