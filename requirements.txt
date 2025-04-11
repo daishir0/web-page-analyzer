@@ -1,0 +1,13 @@
+# Core dependencies
+selenium==4.31.0
+webdriver-manager==4.0.2
+fake-useragent==2.1.0
+Pillow==10.0.0
+openai==1.0.0
+python-dotenv==1.0.0
+
+# Optional dependencies for better performance
+tqdm==4.66.1  # Progress bars
+requests==2.31.0  # HTTP requests
+urllib3==2.0.7  # HTTP client
+certifi==2024.2.2  # SSL certificates

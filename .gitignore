@@ -1,0 +1,13 @@
+# Environment variables
+.env
+
+# Project specific
+__pycache__/
+venv/
+screenshots/
+data/
+debug/
+gomi/
+
+# Logs
+*.log

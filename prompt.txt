@@ -1,0 +1,31 @@
+以下の画像はX（旧Twitter）のプロフィールページのスクリーンショットです。
+この画像から読み取れる情報をJSON形式で出力してください。
+
+【出力仕様】
+- 出力は**JSON形式のみ**で返答してください。文章による説明は一切不要です。
+- 日付は全て `yyyy-mm-dd` 形式にしてください（例: 2025-04-05）。
+- リポスト（リツイート）かどうかを判定し、以下のルールで `repost` フィールドを設定してください：
+    - リポストの場合 → `"repost": 1`
+    - 本人の投稿（オリジナル）→ `"repost": 0`
+
+【JSONフォーマット】
+{
+  "profile": {
+    "display_name": "string",
+    "username": "string",
+    "bio": "string",
+    "location": "string",
+    "website": "string",
+    "birthday": "string",
+    "joined": "string",
+    "followers_count": "string",
+    "following_count": "string"
+  },
+  "tweets": [
+    {
+      "date": "yyyy-mm-dd",
+      "text": "string",
+      "repost": 0 or 1
+    }
+  ]
+}
